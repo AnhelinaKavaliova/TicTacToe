@@ -5,11 +5,10 @@ public class TicTacToe {
                             {' ', '|', ' ', '|', ' '},
                             {'-', '+', '-', '+', '-'},
                             {' ', '|', ' ', '|', ' '}};
-        for(char[] row : table){
-            for(char col : row){
-                System.out.print(col);
-            }
-            System.out.println();
-        }
+
+        PrintTable.printTable(table);
+        Player player = new Player();
+        player.playersMove(table);
+        PrintTable.printTable(table);
     }
 }
