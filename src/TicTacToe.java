@@ -10,5 +10,9 @@ public class TicTacToe {
         Player player = new Player();
         player.playersMove(table);
         PrintTable.printTable(table);
+        Bot bot = new Bot();
+        bot.BotMove(table);
+        PrintTable.printTable(table);
+
     }
 }
